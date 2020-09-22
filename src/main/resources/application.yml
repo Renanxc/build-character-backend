@@ -1,0 +1,41 @@
+server:
+  port: 8090
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: ./logs/
+      prefix: ${spring.application.name}_access_log
+  compression:
+    enabled: true
+    
+
+management:
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when-authorized
+
+feign:
+  compression:
+    request:
+      mime-types: "application/json"
+  client:
+    config:
+      DataPlanClient:
+        connectTimeout: 60000
+        readTimeout: 60000
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /swagger2.json
+
+info:
+  name: Build Character Backend
+  description: An Rest Api that consumes the public Api for RPG data to create Backend with a session to build your own Character.
+  version: 1.0.0

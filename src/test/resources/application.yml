@@ -1,0 +1,62 @@
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: ./logs/
+      prefix: ${spring.application.name}_access_log
+  compression:
+    enabled: true
+    
+
+management:
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when-authorized
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /swagger2.json
+
+info:
+    name: Build Character Backend
+    description: An Rest Api that consumes the public Api for RPG data to create Backend with a session to build your own Character.
+    version: 1.0.0
+
+
+spring:
+  redis:
+      host: localhost
+      port: 6379
+      timeout: 10000
+      jedis:
+          pool:
+              maxIdle: 20 # max idle connections in the pool
+              minIdle: 0 # min idle connections in the pool
+              maxActive: 100 # no limit to the number of active connections
+              maxWait: 10000  # time limit to get a connection - only applies if maxActive is finite
+
+client:
+    rpgcharacter:
+        url: https://www.dnd5eapi.co/api/
+
+#Max range of 1 day
+utils:
+  ttl:
+    range:
+      lower: 600
+      upper: 86400
+
+auth:
+  user:
+    username: test
+    password: test
+  admin:
+    username: admin
+    password: admin

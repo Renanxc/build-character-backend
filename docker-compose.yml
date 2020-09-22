@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  redis:
+    container_name: bcb-redis
+    image: redis:latest
+    restart: always    
+    hostname: redis
+    ports:
+      - '6379:6379'
+    networks:
+      - bcb-net
+      
+  app:
+    container_name: app
+    image: renanxcalmon/build-character-backend:latest
+    restart: always
+    build: .
+    volumes:
+      - "./logs:/usr/app/logs"
+    environment:
+      - JAVA_OPTS=-javaagent:newrelic/newrelic.jar -Dnewrelic.environment=dev -Dspring.profiles.active=dev
+      - SPRING_REDIS_HOST=redis
+      - SPRING_REDIS_PORT=6379
+      - NEW_RELIC_LICENSE_KEY=8d08fdc11bd9b9f47a1645632b64c09476ebNRAL
+      - NEW_RELIC_APP_NAME=build-character-backend
+    depends_on:
+      - redis
+    ports:
+      - "8090:8090"
+    networks:
+      - bcb-net
+networks:
+  bcb-net:
+    driver: bridge

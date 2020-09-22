@@ -1,0 +1,36 @@
+spring:
+  profiles: dev
+  redis:
+      host: localhost
+      port: 6379
+      timeout: 10000
+      jedis:
+          pool:
+              maxIdle: 20 # max idle connections in the pool
+              minIdle: 0 # min idle connections in the pool
+              maxActive: 100 # no limit to the number of active connections
+              maxWait: 10000  # time limit to get a connection - only applies if maxActive is finite
+  devtools:
+    add-properties: false
+
+server:
+  port: 8090
+
+client:
+    rpgcharacter:
+        url: https://www.dnd5eapi.co/api/
+
+#Max range of 1 day
+utils:
+  ttl:
+    range:
+      lower: 600
+      upper: 86400
+
+auth:
+  user:
+    username: user
+    password: user
+  admin:
+    username: admin
+    password: admin

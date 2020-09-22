@@ -1,0 +1,49 @@
+language: java
+jdk:
+- openjdk8
+services:
+- docker
+env:
+  global:
+  - secure: DfxyGliPVRNqGxQYKNJO6DxKblQj7RUVaBYgquZJiEV95yHLJrE5fEnbVqjbZimxgK2nJl7YIOBXQtGygNovFhjOoQ45NkncjZ+j9Pe2VrQrlRXeJUNP6GYyWPVAhu48pUGs4Y7Uuz5wCT/hektaI+F2GMg4n4ZIrdifKKp8RHVse/J+xvz8iEnwkVlRxvzYWL6WSQGSw8WyNEsO3gEzUFkRcPnZIPyquQPwKkIX9L9OHAtPs9ABTPVIV3p8F3fPmLLKN2P4i8UE1F0l0kbcLTgYM6fbxSKa/5SbqqFLGRtVSZbYL5PqRjohNmA91bCoaQ1ia/rkl8yQhwrar9a65ChufPuKyLEAIRapUtqGW7ouF0UBW0zTYscxCQvosPNfxcnSDIddLbb79GqjztZFMJ6UG8gQD6/ZeM2DSnAQZUuP8RQoyP8nFhzaBbhdo3j8FqqdfU9h8qXqfOZogF1JKm3XsMQciUWRiIMDb8h2ayNwmVbLBTI4uYmDfQIbpjgjJbheuLUITc/SMCtvJShRVdv8ftq73XBgggIrOpneGV5hO13/xMvnqD6qNziq/4l80Z68LEGVJyrP3VU6kdYjU+TpqaJAGLUt2YTJoiK3PY3rLCgFmUP3GoH8vTnu296w13r1ggFkWj5M9aquQYbFjmQklf5shpsxe2wskkjjk60=
+  - secure: EC//ysL8Ltn53Rx+BZYAsPbkxsUcJhwvks5QrB3SKR79J6DGXCqPDU3pfmYF1W7HQH1yDxP7oYq7wM2G08hoqXM08GPU1Ab4+uFI46+87nj4ri89GVrlaT+o+4wBjVNER5XW+QMaW05/3mTke6Gssewk1Ko44kmL2wQDNA4pIQ4KyNdSKol9vt/TeKLOjR6ZKFM9Pt3tGgwNQJhjZUHN3JEtU5C7JjQ4OyETTB9h7138SLzZ9i2kkCRMenUnn2CGXbvMXlsMiujdiFK9Rzmo4EtXtmTpSonSD1H+snlK5SunXFwkUvK3pXnkzn3UhU/+/MN4libzN79ASRXKHPu3yCN4kFxLDHSelMl2ZkJsyWH7KgkyTILTlVpjXCmqp1TKek3nJXGCRuSdMrZTZxWK3DQ+0bjqpjyEASbeCrEPCRQaIb6oJtka2uDVMAl8Y7hSXHFX0oNRekd0CQEGIMQFRfDxyuVVivyBtzuBv6GFwlxre2YfIeLhrNalwiB+s8XoIpAlt8qrul+C18YOMD99vXs8znx6hAHgGDLyK+ix27D60qgShGP/uszZuYAo5WvAs74daytxNWTu/AT1bOQfgmkiZkbSSR9zWcNq7XdKiDf5W3518mpOCxrQaBqc1pa1xr3zjrXMxF1pG3ukGOItPKOPp3XO7gKEcDnlecloiBw=
+  - secure: oH3bUDAc7YbS70Fp1ax4S0BYRJ4RFV/KxihrmuwLXlZCyEaXWA0OAi705KyRUZ5ymj3kbB3tWBL8DUTUefQWzV6I4LNnESHWiF/+c1m2DH4jS9y6eag/7seIUFbUlhqBof9W0e5U9oGLVEpAxLRf3L7I28ugS8Zp8uC8bgcS12879QCqEagNYkVSDwNO+yF/NgLRtfeCHcAjinQ/vXtB9pI89VmRZVCgNy8EJAQ2MEw5n8cT8Fcsht/PX9dPrvQHxt/RFdGPU1B+GAjWLSWaVQx2QpGlGUUH9wVDl9X1ucMLhVR6AoobpwoORW0q6w7OONIp5q2U0X/QFQXQz7BQtFHmhPG9shNnOIaX5EwzJnZRfSegJRRdCkccORTjjrINh9kHgVwegjOh9aSErJwKzNOBNhfCzGRqJIyobLmmL4A6IGVJ23zpBvXMjx9aAwIcDohz/PEXILQFYtaKLnqIw3zFHhHvCgybSIpNpAIdfRlLR4fbHZWLuXCltOQ60C9uXtnUdKII0PoNAU8TMg0E8QBCmtJoKXRxV1Ki0YEfd10aaB6ErWBN+G7cP53ZLGI1bAu7vCcLS+ALgc/6HMKDuFPwZAk7cY98GkMDFE67Nk4Hqcbhou2DyX70bpe7hqVeddF3hefuktp2uWTOldUgh+nWJKiwS2da10DEE3OX0CU=
+  - secure: UYVjpb6gbk9Sek3LSaI9hEBKU5n8+y99rXSyAbdwsbAWI+dVkVgoXHE2EsBOaeXug8oAWe7BMf0YANWQUbQmQugZuyO5ZR23XpJZomo7DH7EyMPk/PTgD6RtRpoDLO/LdLX6KQLzGe3bwH1hiy7B2aa5zFFCx6Cz5Jq5E8BZAO1bR72jCGDxUsdBFicw064hAxrz7W8TTN60zcusBlZtm3rU7wBLoPI+iGkk7ZcRLQonM6GywKittOVLHmMPdR6teZm1Ra/xs/yjz1lwufDH5QQWsa+9/qVt6S+I5P8LsUfvlPs/RPdyqULCTHO3wNwOsPsitb+kM2UWF4h/VS0zBA/yxLWGfSU9/AYe3mk/w6V1fnC5Z8Xi9+QxHrio28G8MoxXHtYtVXwzcr4MXE8Fc4CVzK2hrRniYDqKvBOe0K8lkwzoYxAV5mR9RUG/cClhMgVgSlSqr87/fDcTsdOv7tEjn5ATZjjvru31VxjWAqwNCjyegv/GvBJo1BGKz1ECou9+3tH/wBIhXSDeEeJnnE8mFBMbny6uW2+f/IQoat0fcLVocU9Tvz63NLmA5CIkmNE7N1WEIbdtN8mGYNKEUKqYUSwOaVTz6rpdZqa2uD4s0NZ6llXe1aInWSfunCkMiK5VWNot67I0GLn/V/K6t5UC5KQicDgw2onQzpZL7zM=
+  - secure: hZI/SAFRJYX7LqEgN3f3CYMLFcJXcQhJ9mpRH9uwLFrYxXTMdkOXfBUiR4A61jtkQYIVOz53AGZJyppu10x1JMoLQP8+N9FkdIkZCFcTbdWSO8fHkWDboFWmUGvsLtLvsTYbtXEweIoaeMYY46LVdcr6+Kx5BflEayaEXCwrTty8uEiqk9RxHhMa9edOfbUHeoTfIU1M1uq0KDkR1PtO8Yi9up2eCdMaPDULsXYbYCe3v5W9vTSztSP2ZbtlTR2ZqtI8rPzu6QZGZUHtPY8ZuZrPocLAB4x+XVjq7i1r9GWQ3QiCcL3epAumqjE87kdjX1C8DKK2DQCl6yVRdT0IpLvZTxQOI2uVfqV5aVx0hkkbHsWt8cepRj++pxzJXezQB6q4tsrA4nBFP1hjLrzBA8k0JyvBQBiJBOPfJvkSjfcXo/qsmiNwkQ+Y0gJl8D+1FjxTh0bGfJAe7fEDjpzSyub7WdRUY1ru7w5qhjL0tFM7UQg/kTehiZ8qn7s6y+CukYzhNlhKPBGMOHAlBRaFLlaJszJ3ShSTDzjlfmr/nnzpFQlB47ibVoLlx7HCk9XDnFRu7ym3pNRsNLlVUSHd2ZEsvhRV/UgHAJxDs2Q6I2kwo4cJHHx0GMivx4fNghKPHtVgikpObxYT7eet+M1cvdRr7Amb0s3rFVFmYV8mB9w=
+
+before_install:
+- docker pull openjdk:8-jdk-alpine
+
+script:
+- mvn test -Punit-tests
+- mvn test -Pintegration-tests
+- mvn clean package -DskipTests=true
+
+after_success:
+- export COMMIT=${TRAVIS_COMMIT::7}
+- export TAG=`if [ ! -z "$TRAVIS_TAG" ]; then echo "$TRAVIS_TAG"; else echo "$TRAVIS_BRANCH--$COMMIT";
+  fi`
+- docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+- docker-compose build
+- docker tag $IMAGE_NAME:latest $IMAGE_NAME:$TAG
+- docker push $IMAGE_NAME:$TAG
+- export TITLE="$IMAGE_NAME:$TAG is built properly and pushed to Dockerhub"
+- export TIMESTAMP=`date`
+- export GIT_LOG=`git log -1 --pretty=%B $COMMIT`
+- export TEXT="[build version] $TAG<br />[datetime] $TIMESTAMP<br />[changelog] $GIT_LOG<br
+  />"
+
+deploy:
+  provider: heroku
+  edge: true
+  skip_cleanup: true
+  api_key: $HEROKU_API_KEY
+  app: build-character-backend
+  on:
+    branch: master
+    tags: true
+    repo: $REPO_NAME
+
+after_deploy:
+  - export TITLE="🎉🎉🎉New version $TAG is deployed to Heroku production🎉🎉🎉"
+  - export TEXT=[datetime]:`date`
